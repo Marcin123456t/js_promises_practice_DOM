@@ -9,8 +9,6 @@ const addNotification = (message, type = 'success') => {
   document.body.appendChild(div);
 };
 
-document.addEventListener('contextmenu', (e) => e.preventDefault());
-
 const firstPromise = new Promise((resolve, reject) => {
   const timeoutId = setTimeout(() => {
     reject(new Error('First promise was rejected'));
